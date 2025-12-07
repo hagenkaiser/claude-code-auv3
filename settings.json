@@ -3,6 +3,10 @@
     "audiokit-dsp": {
       "path": "~/.claude/skills/audiokit-dsp.md",
       "description": "Comprehensive AudioKit 5 DSP documentation for AUv3 development"
+    },
+    "sporth-dsp": {
+      "path": "~/.claude/skills/sporth-dsp.md",
+      "description": "SporthAudioKit reference for sample playback, slicing, filters, envelopes, and voice architecture"
     }
   }
 }
