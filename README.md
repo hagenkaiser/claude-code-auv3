@@ -11,6 +11,7 @@ Claude Code configuration files for AudioKit AUv3 instrument development.
   - `create-auv3.md` - `/create-auv3 ProjectName` to scaffold a new AUv3 project
 
 - **agents/** - Specialized AI agents that work as a team
+  - `auv3-product-manager.md` - Brainstorms ideas, creates specs, manages GitHub issues
   - `auv3-coordinator.md` - Primary entry point, orchestrates the team
   - `auv3-architect.md` - Designs signal flow and parameters
   - `auv3-dsp-engineer.md` - Implements audio processing
@@ -36,9 +37,22 @@ cp -r claude-code-auv3/agents/* ~/.claude/agents/
 
 ## Usage
 
-### Creating a New AUv3 Instrument
+### Brainstorming New Ideas
 
-Simply tell Claude Code what you want to build:
+Start with the product manager to explore concepts:
+
+> "I want to brainstorm ideas for a new synth"
+
+The **auv3-product-manager** agent will:
+1. Discuss your musical interests and workflow gaps
+2. Generate concept ideas with pros/cons
+3. Refine your chosen concept into a detailed spec
+4. Create a GitHub repo (when you ask)
+5. Push requirements as trackable issues (with your permission)
+
+### Building an AUv3 Instrument
+
+Once you have a concept, tell Claude Code what you want to build:
 
 > "I want to create a subtractive synth with 2 oscillators and a filter"
 
